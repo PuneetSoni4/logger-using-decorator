@@ -1,0 +1,30 @@
+2017-07-17 11:25:33,790 [INFO] main: This is in test 2.
+2017-07-17 11:25:33,790 [WARNING] test_3: This is in test 2. WARN ERROR
+2017-07-17 11:25:33,911 [CRITICAL] test_3: integer division or modulo by zero
+
+
+
+
+2017-07-17 11:26:18,319 [INFO] main: This is in test 2.
+2017-07-17 11:26:18,328 [WARNING] test_3: This is in test 2. WARN ERROR
+2017-07-17 11:26:18,328 [ERROR] wrapper: There was an exception in  test_3
+Traceback (most recent call last):
+  File "C:\Users\pusoni\Desktop\python_logging\log_main\exception_decor.py", line 15, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\pusoni\Desktop\python_logging\log_main\test_3.py", line 7, in test_3
+    1/0
+ZeroDivisionError: integer division or modulo by zero
+2017-07-17 11:26:18,328 [ERROR] wrapper: There was an exception in  main
+Traceback (most recent call last):
+  File "C:\Users\pusoni\Desktop\python_logging\log_main\exception_decor.py", line 15, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\pusoni\Desktop\python_logging\log_main\test_3.py", line 16, in main
+    test_3()
+  File "C:\Users\pusoni\Desktop\python_logging\log_main\exception_decor.py", line 15, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\pusoni\Desktop\python_logging\log_main\test_3.py", line 7, in test_3
+    1/0
+ZeroDivisionError: integer division or modulo by zero
+2017-07-17 11:27:19,138 [INFO] main: This is in test 2.
+2017-07-17 11:27:19,138 [WARNING] test_3: This is in test 2. WARN ERROR
+2017-07-17 11:27:19,138 [CRITICAL] test_3: integer division or modulo by zero
